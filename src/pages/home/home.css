@@ -12,6 +12,7 @@
 }
 
 
+/* This section allowed me to apply linear-gradient to the image even when it is not a background image */
 .carousel-item:before {
     content: '';
     position:absolute;
@@ -26,6 +27,7 @@
 }
 
 
+/* Sectioning the caption at the middle of the div */
 .carousel-caption{
     position: absolute;
     width: 100%;
@@ -40,6 +42,8 @@
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+
+/* setting different property to the h1 tag */
 .carousel-caption h1{
     font-size: 66px;
     color: #fff;
@@ -48,20 +52,24 @@
     line-height: 1.3;
     margin-bottom: 31px;
     font-family: 'Noto Serif', serif;
+    animation: upSlide 2s ease;
     /* position: relative;
     top: 100%;
     left: 0;
     transform: translateY(-50%); */
 }
 
+/* setting different property to the h3 tag */
 .carousel-caption h3 {
     font-size: 30px;
     color: #fff;
     position: relative;
     display: inline-block;
     margin-bottom: 60px;
+    animation: downSlide 2s ease;
   }
 
+/* Putting a line at the begining of h3 */
 .carousel-caption h3::before {
     position: absolute;
     content: "";
@@ -74,7 +82,7 @@
     transform: translateY(-50%);
   }
   
-  /* line 66, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_h1-hero.scss */
+  /* Putting the line at the end of the h3 */
   .carousel-caption h3::after {
     position: absolute;
     content: "";
@@ -88,119 +96,51 @@
   }
 
 
-/* line 28, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_h1-hero.scss */
-.slider-area .h1-slider-caption h1 {
-    font-size: 66px;
-    color: #fff;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.3;
-    margin-bottom: 31px;
-    font-family: 'Noto Serif', serif;
+  /* Creating the animation effect for the h1 and h3 to animate on load.
+  This animation allows the text to appear from the bottom of the screen */
+  @keyframes downSlide {
+    0% {
+      transform: translateY(-300%);
+      opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+    }
   }
+
   
+ /* Creating the animation effect for the h1 and h3 to animate on load.
+  This animation allows the text to appear from the top of the screen */
+  @keyframes upSlide {
+    0% {
+      transform: translateY(300%);
+    }
+    /* 70% {
+      transform: translateY(-100%);
+    } */
+
+    100%{
+        transform: translateY(0%);
+    }
+  }
+    
+
+
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* line 28, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_h1-hero.scss */
     .slider-area .h1-slider-caption h1 {
       font-size: 51px;
     }
   }
   
   @media only screen and (min-width: 576px) and (max-width: 767px) {
-    /* line 28, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_h1-hero.scss */
     .slider-area .h1-slider-caption h1 {
       font-size: 34px;
     }
   }
   
   @media (max-width: 767px) {
-    /* line 28, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_h1-hero.scss */
     .slider-area .h1-slider-caption h1 {
       font-size: 27px;
       margin-bottom: 13px;
     }
   }
-  
-  /* line 48, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_h1-hero.scss */
-  .slider-area .h1-slider-caption h3 {
-    font-size: 30px;
-    color: #fff;
-    position: relative;
-    display: inline-block;
-    margin-bottom: 60px;
-  }
-  
-  /* line 55, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_h1-hero.scss */
-  .slider-area .h1-slider-caption h3::before {
-    position: absolute;
-    content: "";
-    width: 154px;
-    height: 2px;
-    background: #e59a09;
-    top: 0;
-    left: -180px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  /* line 66, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_h1-hero.scss */
-  .slider-area .h1-slider-caption h3::after {
-    position: absolute;
-    content: "";
-    width: 170px;
-    height: 2px;
-    background: #e59a09;
-    top: 0;
-    right: -190px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  /* line 81, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_h1-hero.scss */
-  .slider-area .dot-style .slick-dots {
-    text-align: center;
-    bottom: 88px;
-    left: 0;
-    right: 0;
-    position: absolute;
-  }
-  
-  /* line 88, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_h1-hero.scss */
-  .slider-area .dot-style .slick-dots li {
-    display: inline-block;
-  }
-  
-  /* line 91, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_h1-hero.scss */
-  .slider-area .dot-style .slick-dots button {
-    text-indent: -100000px;
-    height: 8px;
-    width: 8px;
-    border: 0;
-    padding: 0;
-    margin-right: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    background: #aba4a4;
-  }
-  
-  /* line 102, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_h1-hero.scss */
-  .slider-area .dot-style .slider-active.dot-style .slick-dots button {
-    text-indent: -100000px;
-    height: 15px;
-    width: 15px;
-    border: 0;
-    padding: 0;
-    margin-right: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 2px solid #3A3A3A;
-    margin-bottom: 84px;
-  }
-  
-  /* line 114, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_h1-hero.scss */
-  .slider-area .dot-style .slick-active button {
-    background: #fff;
-    height: 10px;
-    width: 10px;
-  }
-  

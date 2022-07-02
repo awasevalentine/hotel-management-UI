@@ -8,10 +8,14 @@ const Home = () => {
 
     const [loaded, setStatus] = useState(true);
 
+
+    window.onload = () => {
+        setTimeout(()=>{
+            setStatus(false);
+        },2000)
+    }
+
 useEffect(()=>{
-    setTimeout(()=>{
-        setStatus(false)
-    },3000)
 
 })
     return ( 
@@ -26,7 +30,7 @@ useEffect(()=>{
         
 
 
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" ride='false' data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bullet" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="bullet"></button>
@@ -55,71 +59,10 @@ useEffect(()=>{
                 </div>
                 </div>
             </div>
-            {/* <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button> */}
         </div>
-
-
-
-
-
-        {/* <!-- slider Area Start--> */}
-        <div class="slider-area ">
-            {/* <!-- Mobile Menu --> */}
-            <div class="slider-active dot-style">
-                <div class="single-slider  hero-overly slider-height d-flex align-items-center"
-                    data-background="/assets/img/hero/h1_hero.jpg">
-                    <div class="container">
-                        <div class="row justify-content-center text-center">
-                            <div class="col-xl-9">
-                                <div class="h1-slider-caption">
-                                    <h1 data-animation="fadeInUp" data-delay=".4s">top hotel in the city</h1>
-                                    <h3 data-animation="fadeInDown" data-delay=".4s">~ Hotel ~</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-slider  hero-overly slider-height d-flex align-items-center"
-                    data-background="/assets/img/hero/h1_hero.jpg">
-                    <div class="container">
-                        <div class="row justify-content-center text-center">
-                            <div class="col-xl-9">
-                                <div class="h1-slider-caption">
-                                    <h1 data-animation="fadeInUp" data-delay=".4s">top hotel in the city</h1>
-                                    <h3 data-animation="fadeInDown" data-delay=".4s">Hotel & Resourt</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-slider  hero-overly slider-height d-flex align-items-center"
-                    data-background="/assets/img/hero/h1_hero.jpg">
-                    <div class="container">
-                        <div class="row justify-content-center text-center">
-                            <div class="col-xl-9">
-                                <div class="h1-slider-caption">
-                                    <h1 data-animation="fadeInUp" data-delay=".4s">top hotel in the city</h1>
-                                    <h3 data-animation="fadeInDown" data-delay=".4s">Hotel & Resourt</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {/* <!-- slider Area End--> */}
-
-
-
 
         </>
+
      );
 }
  
