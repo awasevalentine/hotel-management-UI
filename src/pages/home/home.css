@@ -138,9 +138,76 @@
     }
   }
   
-  @media (max-width: 767px) {
-    .slider-area .h1-slider-caption h1 {
-      font-size: 27px;
-      margin-bottom: 13px;
+  @media only screen and (max-width: 767px) {
+    .carousel-indicators{
+        /* margin-top: 6rem !important; */
+        position: absolute;
+        bottom: -10px;
     }
+
+    /* setting different property to the h1 tag */
+.carousel-caption h1{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+    margin: 0!important;
+    font-family: 'Noto Serif', serif;
+    animation: upSlide 2s ease;
+}
+
+/* setting different property to the h3 tag */
+.carousel-caption h3 {
+    font-size: 13px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 60px;
+    animation: downSlide 2s ease;
+  }
+
+  /* Putting a line at the begining of h3 */
+.carousel-caption h3::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: #e59a09;
+    top: 0;
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Putting the line at the end of the h3 */
+  .carousel-caption h3::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: #e59a09;
+    top: 0;
+    right: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  
+/* Sectioning the caption at the middle of the div */
+.carousel-caption{
+    /* position: absolute; */
+    width: 100%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
   }
