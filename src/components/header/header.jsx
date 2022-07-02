@@ -9,9 +9,9 @@ const PageHeader = () => {
         <header>
             <nav class="navbar navbar-expand-lg sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="#"><Image src={require('../../assets/img/logo/hotel.png')}></Image></a>
+                <a class="navbar-brand" href="/"><Image src={require('../../assets/img/logo/hotel.png')}></Image></a>
                 <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span><GoThreeBars/></span>
+                <span style={{fontSize: '35px'}}><GoThreeBars/></span>
                 </a>
                 <div class="collapse navbar-collapse justify-content-md-end " id="navbarTogglerDemo02">
                 <ul class="navbar-nav justify-content-md-end mb-2 mb-lg-0 " style={{paddingRight: '1.6rem'}} >
