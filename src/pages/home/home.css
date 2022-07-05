@@ -663,6 +663,29 @@
 
   /* Dinning Section */
 
+  .dining-padding-top {
+    padding-top: 200px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .dining-padding-top {
+      padding-top: 100px;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .dining-padding-top {
+      padding-top: 100px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .dining-padding-top {
+      padding-top: 0px;
+    }
+  }
+  
+
 .dining-area .single-dining-area {
   position: relative;
   padding: 150px 0;
@@ -672,6 +695,7 @@
     background: rgba(252, 252, 252, 0.95);
     padding: 92px 98px 98px 96px;
     border-radius: 5px;
+    position: relative;
   }
   
   @media only screen and (min-width: 768px) and (max-width: 991px) {

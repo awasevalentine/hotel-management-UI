@@ -87,7 +87,7 @@ useEffect(()=>{
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
                                 </p>
-                                <a href="/" class="btn more-btn1">Learn More <GoChevronRight /> </a>
+                                <a href="/" class="btn more-btn1">Learn More <GoChevronRight style={{display: 'inline-flex'}} /> </a>
                             </div>
                         </div>
                     </div>
@@ -110,7 +110,7 @@ useEffect(()=>{
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br /> tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br />veniam, quis
                                     nostrud.</p>
-                                <a href="#" class="btn border-btn">Learn More <i class="ti-angle-right"></i> </a>
+                                <a href="#" class="btn border-btn">Learn More <GoChevronRight style={{display: 'inline-flex'}} /></a>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@ useEffect(()=>{
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br/> tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br />veniam, quis
                                     nostrud.</p>
-                                <a href="#" class="btn border-btn">Learn More <i class="ti-angle-right"></i></a>
+                                <a href="#" class="btn border-btn">Learn More <GoChevronRight style={{display: 'inline-flex'}} /></a>
                             </div>
                         </div>
                     </div>
