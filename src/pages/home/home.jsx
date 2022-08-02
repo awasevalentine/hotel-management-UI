@@ -23,13 +23,7 @@ useEffect(()=>{
 })
 	return ( 
 		<>
-		{ loaded ? (
-				<CustomSpinner />
-			):(
-			<div class="sticky-top">
-				<PageHeader />
-			</div>
-			)}
+		{ loaded && <CustomSpinner />}
 		
 
 		{/* Carousel display on the first section */}
@@ -206,6 +200,8 @@ useEffect(()=>{
 		{/* Footer Section */}
 
 		<Footer />
+
+		{/* End of Footer Section */}
 
 		</>
 

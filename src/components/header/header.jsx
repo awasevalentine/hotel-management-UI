@@ -16,7 +16,7 @@ const PageHeader = () => {
                 <div class="collapse navbar-collapse justify-content-md-end " id="navbarTogglerDemo02">
                 <ul class="navbar-nav justify-content-md-end mb-2 mb-lg-0 " style={{paddingRight: '1.6rem'}} >
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
                     
                     </li>
                     {user ? (
@@ -29,9 +29,10 @@ const PageHeader = () => {
                                              
                         ):(
                         <>
+                            <li class="nav-item"><a class="nav-link" href="/booking">Book Room</a></li>
                             <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/createaccount">Create Account</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/register">Create Account</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
                         </>
                                             
                         )}

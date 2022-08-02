@@ -2,8 +2,23 @@
   margin-bottom: 32px;
 }
 
+.footer-social{
+    display: inline-block;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
 .footer-area .footer-social {
   margin-bottom: 30px;
+}
+
+.social-media-icons{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 3.5px 0 0 4px;
 }
 
 .footer-area .footer-social a {
@@ -12,11 +27,13 @@
   border: 1px solid #888;
   background: #fff;
   display: inline-block;
+  font-size: 30px;
   line-height: 40px;
   text-align: center;
   color: #949eb2;
   margin-right: 5px;
   transition: .3s linear;
+  border-radius: 50%;
 }
 
 .footer-area .footer-social a:hover {
